@@ -1,128 +1,89 @@
+@charset "UTF-8";
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-/*
-Elementos de bloque del body:
-header
-main content (con sections)
-footer
-*/
-
-/*Fuente*/
-@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital@1&family=Open+Sans:wght@300&display=swap");
-
-/*Body*/
+/*body*/
 body {
   background-color: #ffd8cc;
-  font-family: "Ibarra Real Nova", serif;
-}
+  font-family: "Ibarra Real Nova", serif; }
 
 main {
-  margin: 25px;
-}
+  margin: 25px; }
 
-
-/*Header*/
-
-
+/*header*/
 .headerPadre {
   display: flex;
-  height: auto;  
+  height: auto;
   background-color: #ffbd9b;
-  padding: 9px;  
+  padding: 9px;
   justify-content: space-around;
-  align-items: center;
-}
+  align-items: center; }
 
 .headerHijoOne {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
-.headerHijoOne img {
-  width: 60px;
-  display: flex;
-}
+  align-items: center; }
+  .headerHijoOne img {
+    width: 60px;
+    display: flex; }
 
 .headerHijoTwo {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.headerHijoTwo ul {
-  display: flex;
-  flex-direction: row;
-}
-
-.headerHijoTwo li {
-  margin: 10px;
-}
-
+  justify-content: center; }
+  .headerHijoTwo ul {
+    display: flex;
+    flex-direction: row; }
+  .headerHijoTwo li {
+    margin: 10px; }
 
 /*INDEX PAGE*/
-
 /*Aplicando Grids Area*/
-
 .headerPadre {
-  grid-area: headerindex;
-}
+  grid-area: headerindex; }
 
 .sectionIndexA {
-  grid-area: sectionindexa;
-}
+  grid-area: sectionindexa; }
 
 .sectionIndexB {
-  grid-area: sectionindexb;
-}
+  grid-area: sectionindexb; }
 
 .indexPadre {
-  grid-area: indexpadreboxes;
-}
+  grid-area: indexpadreboxes; }
 
 .footerGrid {
-  grid-area: footerpadre;
-}
+  grid-area: footerpadre; }
 
 .imageBanner {
-  width: 100%;
-    }
+  width: 100%; }
 
 .indexOne h2 {
   margin-top: 10px;
-  margin-bottom: 10px; 
-}
+  margin-bottom: 10px; }
 
 .indexOne p {
   text-align: justify;
   margin-top: 5px;
-  margin-bottom: 5px;  
-}
+  margin-bottom: 5px; }
 
-
-.indexTopFiveTitle{ 
+.indexTopFiveTitle {
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: "Ibarra Real Nova", serif;
-}
+  font-family: "Ibarra Real Nova", serif; }
 
 .indexPadre {
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  }
+  align-items: center; }
 
 .indexHijo {
-  
   width: 400px;
   min-height: 650px;
   margin-left: 50px;
@@ -132,27 +93,21 @@ main {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
   box-shadow: 5px 0px 30px;
   border: 2px solid #ffbd9b;
-  border-radius: 4px;
+  border-radius: 4px; }
 
-}
 p {
-  font-family: "Ibarra Real Nova", serif;
-}
-
-
+  font-family: "Ibarra Real Nova", serif; }
 
 /*FOOTER*/
 footer {
-  font-family: "Ibarra Real Nova", serif;
-}
+  font-family: "Ibarra Real Nova", serif; }
 
 .logoFooter {
-  width: 50px;
-  }
+  width: 50px; }
 
 .footerPadre {
   height: auto;
@@ -163,64 +118,51 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   border-width: 3px;
-  margin: auto;
-}
+  margin: auto; }
 
 .footerHijoCero {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
 
 .footerHijoOne {
   display: flex;
-  flex-direction: column;
- }
+  flex-direction: column; }
 
 .footerHijoTwo {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-
-}
+  justify-content: space-evenly; }
 
 .footerHijoThree {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-}
-
+  justify-content: center; }
 
 /*No tocar con flex, es el whatsapp fixed*/
 .sectionContacto {
   position: relative;
-  font-family: "Ibarra Real Nova", serif;
-}
+  font-family: "Ibarra Real Nova", serif; }
 
 .whatsappFixed {
   position: fixed;
   top: 0;
   right: 25px;
-  top: 90%;
-}
+  top: 90%; }
 
 /*Pequeños componentes en común*/
 li {
-  list-style: none;
-}
+  list-style: none; }
+
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 /* pagina RECETARIO*/
-
 /*RECETAS CON CARNE*/
-
 .recetarioHDos h2 {
-  text-align: center;
-}
+  text-align: center; }
 
 .padreFlexRecetas {
   font-family: "Ibarra Real Nova", serif;
@@ -228,15 +170,14 @@ a {
   justify-content: center;
   align-items: center;
   border-width: 3px;
-  margin: auto; /* Este centra el box*/
-}
-
-.hijoFlexRecetas img {
-  margin: 15px;
-  width: 120px;
-  height: 100px;
-  display: flex;
-}
+  margin: auto;
+  /* Este centra el box*/ }
+  .padreFlexRecetas h3 {
+    margin: 10px;
+    text-align: center; }
+  .padreFlexRecetas input {
+    margin: 10px;
+    width: 90px; }
 
 .hijoFlexRecetas {
   background-color: #ffbd9b;
@@ -250,37 +191,28 @@ a {
   border-image: initial;
   border-radius: 8px;
   margin: 20px;
-  box-shadow: 5px 0px 30px;
-}
-
-.padreFlexRecetas h3 {
-  margin: 10px;
-  text-align: center;
-}
-
-.padreFlexRecetas input {
-  margin: 10px;
-  width: 90px;
-}
+  box-shadow: 5px 0px 30px; }
+  .hijoFlexRecetas img {
+    margin: 15px;
+    width: 120px;
+    height: 100px;
+    display: flex; }
 
 /*Pagina Como comprar*/
 .comoComprar h2 {
   margin-top: 5px;
-  margin-bottom: 5px;
-}
+  margin-bottom: 5px; }
 
 .comoComprar p {
   margin-top: 5px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .comprarPasosPadre {
   font-family: "Ibarra Real Nova", serif;
   height: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .comprarPasosHijo {
   height: auto;
@@ -293,37 +225,26 @@ a {
   border-image: initial;
   border-radius: 4px;
   margin-left: 40px;
-  margin-right: 40px;
-}
-
-.comprarPasosHijo p {
-  text-align: center;
-}
+  margin-right: 40px; }
+  .comprarPasosHijo p {
+    text-align: center; }
 
 .padreFaqs {
-  font-family: "Ibarra Real Nova", serif;
-}
-
-.padreFaqs h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.padreFaqs p {
-  text-align: justify;
-  }
+  font-family: "Ibarra Real Nova", serif; }
+  .padreFaqs h3 {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .padreFaqs p {
+    text-align: justify; }
 
 /*Pagina consejos*/
-
 .consejosTitulo h2 {
   margin-top: 5px;
-  margin-bottom: 5px;
-}
+  margin-bottom: 5px; }
 
 .consejosTitulo p {
   margin-top: 5px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .consejosPadre {
   font-family: "Ibarra Real Nova", serif;
@@ -333,8 +254,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 .consejosHijo {
   margin-top: 20px;
@@ -343,66 +263,48 @@ a {
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 .left h3 {
-  margin-left: 40px; 
-  margin-bottom: 20px; 
-  height: auto;
-}
-
-.left p {
   margin-left: 40px;
-  height: auto;
-}
+  margin-bottom: 20px;
+  height: auto; }
 
-.left a {
-  margin-left: 40px;  
-  height: auto;
-  }
+.left p, .left a {
+  margin-left: 40px;
+  height: auto; }
 
-  .right h3 {
-    margin-right: 40px; 
-    margin-bottom: 20px;    
-    height: auto;
-  }
-  
-  .right p {
-    margin-right: 40px;
-    height: auto;
-  }
-  
-  .right a {
-    margin-right: 40px;
-    margin-top: 20px;  
-    height: auto;
-     }
+.right h3 {
+  margin-right: 40px;
+  margin-bottom: 20px;
+  height: auto; }
 
+.right p {
+  margin-right: 40px;
+  height: auto; }
+
+.right a {
+  margin-right: 40px;
+  margin-top: 20px;
+  height: auto; }
 
 /*Pagina Contacto*/
 /*Aplicando grids*/
-
 .contactoTitulo {
-  grid-area: contactotitulo;
-}
+  grid-area: contactotitulo; }
 
 .contactoPadreForm {
-  grid-area: contactopadreform;
-}
-
+  grid-area: contactopadreform; }
 
 .contactoTitulo h2 {
   margin-top: 5px;
   margin-bottom: 5px;
-  font-family: "Ibarra Real Nova", serif;
-}
+  font-family: "Ibarra Real Nova", serif; }
 
 .contactoTitulo p {
   margin-top: 5px;
   margin-bottom: 10px;
-  font-family: "Ibarra Real Nova", serif;
-}
+  font-family: "Ibarra Real Nova", serif; }
 
 .contactoPadreForm {
   font-family: "Ibarra Real Nova", serif;
@@ -412,163 +314,88 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 .contactoHijo {
   margin-top: 10px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .left p {
- margin: 20px;
-height: auto;
-}
+  margin: 20px;
+  height: auto; }
 
 #text1 {
   width: 250px;
-  height: 150px;
-}
-
-
+  height: 150px; }
 
 /*APLICANDO @MEDIA*/
-
 @media (max-width: 900px) {
-
- /*index*/
-.gridPadreIndex {
-  display: grid;
-  grid-template-areas:
-  "headerindex headerindex headerindex"
-  "sectionindexa sectionindexa sectionindexa"
-  "sectionindexb sectionindexb sectionindexb"
-  "indexpadreboxes indexpadreboxes indexpadreboxes"
-  "footerpadre footerpadre footerpadre"
-  ;
-}
-.gridPadreContacto {
-  display: grid;
-  grid-template-areas:
-  "headerindex headerindex headerindex"
-  "contactotitulo contactotitulo contactotitulo"
-  "contactopadreform contactopadreform contactopadreform"
-  "footerpadre footerpadre footerpadre"
-  ;
-}
-
- .indexPadre {
-  flex-wrap: wrap ;
- }
-
- 
- .contactoPadreForm img {
-  display: none;
- }
-
-
- .footerRedesContacto {
-  display: none;
- }
-
- /*como-comprar*/
- 
- .comprarPasosPadre {
-  flex-wrap: wrap ;
- }
- /*consejos*/
-
- .consejosPadre {
-  flex-wrap: wrap ;
- }
-
-
- .consejosHijo {
-   margin-top: 20px;
-   margin-bottom: 20px;
-   width: auto;
-   height: auto;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
- }
-
- .left h3 {
-  margin: 20px; 
-  height: auto;
-}
-
-.right h3 {
-  margin: 20px; 
-  margin-bottom: 20px;    
-  height: auto;
-}
-
-.right p {
-  margin: 20px;
-  /*width: 700px ;*/
-  height: auto;
-}
-
-.left p {
-  margin: 20px;
-  /*width: 700px ;*/
-  height: auto;
-}
-
-/*contacto*/
-.contactoPadreForm {
-  font-family: "Ibarra Real Nova", serif;
-  height: auto;
- 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:center;
-}
-
-/*recetario*/
-.padreFlexRecetas {
-  flex-wrap: wrap
-}
-
-}
+  /*index*/
+  .gridPadreIndex {
+    display: grid;
+    grid-template-areas: "headerindex headerindex headerindex" "sectionindexa sectionindexa sectionindexa" "sectionindexb sectionindexb sectionindexb" "indexpadreboxes indexpadreboxes indexpadreboxes" "footerpadre footerpadre footerpadre"; }
+  .gridPadreContacto {
+    display: grid;
+    grid-template-areas: "headerindex headerindex headerindex" "contactotitulo contactotitulo contactotitulo" "contactopadreform contactopadreform contactopadreform" "footerpadre footerpadre footerpadre"; }
+  .indexPadre {
+    flex-wrap: wrap; }
+  .contactoPadreForm img {
+    display: none; }
+  .footerRedesContacto {
+    display: none; }
+  /*como-comprar*/
+  .comprarPasosPadre {
+    flex-wrap: wrap; }
+  /*consejos*/
+  .consejosPadre {
+    flex-wrap: wrap; }
+  .consejosHijo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .left h3 {
+    margin: 20px;
+    height: auto; }
+  .right h3 {
+    margin: 20px;
+    margin-bottom: 20px;
+    height: auto; }
+  .right p {
+    margin: 20px;
+    /*width: 700px ;*/
+    height: auto; }
+  .left p {
+    margin: 20px;
+    /*width: 700px ;*/
+    height: auto; }
+  /*contacto*/
+  .contactoPadreForm {
+    font-family: "Ibarra Real Nova", serif;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+  /*recetario*/
+  .padreFlexRecetas {
+    flex-wrap: wrap; } }
 
 @media (max-width: 1245px) {
   .gridPadreIndex {
-  display: grid;
-  grid-template-areas:
-  "headerindex headerindex headerindex"
-  "sectionindexa sectionindexa sectionindexa"
-  "sectionindexb sectionindexb sectionindexb"
-  "indexpadreboxes indexpadreboxes indexpadreboxes"
-  "footerpadre footerpadre footerpadre"
-  ;
-  }
-
+    display: grid;
+    grid-template-areas: "headerindex headerindex headerindex" "sectionindexa sectionindexa sectionindexa" "sectionindexb sectionindexb sectionindexb" "indexpadreboxes indexpadreboxes indexpadreboxes" "footerpadre footerpadre footerpadre"; }
   .gridPadreContacto {
     display: grid;
-    grid-template-areas:
-    "headerindex headerindex headerindex"
-    "contactotitulo contactotitulo contactotitulo"
-    "contactopadreform contactopadreform contactopadreform"
-    "footerpadre footerpadre footerpadre"
-    ;
-  }
+    grid-template-areas: "headerindex headerindex headerindex" "contactotitulo contactotitulo contactotitulo" "contactopadreform contactopadreform contactopadreform" "footerpadre footerpadre footerpadre"; }
   .indexPadre {
-    flex-wrap: wrap ;
-   }
-
+    flex-wrap: wrap; }
   .comprarPasosPadre {
-    flex-wrap: wrap ;
-   }
-
-   .consejosPadre {
-    flex-wrap: wrap ;
-   }
-
-   .padreFlexRecetas {
-    flex-wrap: wrap
-  }
-
-}
+    flex-wrap: wrap; }
+  .consejosPadre {
+    flex-wrap: wrap; }
+  .padreFlexRecetas {
+    flex-wrap: wrap; } }
