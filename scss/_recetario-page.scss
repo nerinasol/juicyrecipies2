@@ -1,0 +1,49 @@
+/* pagina RECETARIO*/
+
+
+
+.recetarioHDos h2 {
+    text-align: center;
+  }
+  
+  .padreFlexRecetas {
+    font-family: "Ibarra Real Nova", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 3px;
+    margin: auto; /* Este centra el box*/
+  
+    h3 {
+      margin: 10px;
+      text-align: center;
+    }
+  
+    input {
+      margin: 10px;
+      width: 90px;
+    }
+  }
+  
+  .hijoFlexRecetas {
+    background-color: $color-secundario;
+    height: 320px;
+    width: 290px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-width: 1px;
+    border-image: initial;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 5px 0px 30px;
+  
+    img {
+      margin: 15px;
+      width: 120px;
+      height: 100px;
+      display: flex;
+    }
+  }
+  

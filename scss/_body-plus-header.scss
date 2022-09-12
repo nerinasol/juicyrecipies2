@@ -1,0 +1,56 @@
+/*body*/
+
+body {
+    background-color: $color-principal;
+    font-family: "Ibarra Real Nova", serif;
+  }
+  
+  main {
+    margin: 25px;
+  }
+  
+  /*header*/
+  
+  .headerPadre {
+    display: flex;
+    height: auto;
+    background-color: $color-secundario;
+    padding: 9px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .headerHijoOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      width: 60px;
+      display: flex;
+    }
+  }
+  
+  .headerHijoTwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    li {
+      margin: 10px;
+    }
+  }
+
+  /*Pequeños componentes en común*/
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

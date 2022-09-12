@@ -1,0 +1,131 @@
+/*APLICANDO @MEDIA*/
+
+@media (max-width: 900px) {
+    /*index*/
+    .gridPadreIndex {
+      display: grid;
+      grid-template-areas:
+        "headerindex headerindex headerindex"
+        "sectionindexa sectionindexa sectionindexa"
+        "sectionindexb sectionindexb sectionindexb"
+        "indexpadreboxes indexpadreboxes indexpadreboxes"
+        "footerpadre footerpadre footerpadre";
+    }
+    .gridPadreContacto {
+      display: grid;
+      grid-template-areas:
+        "headerindex headerindex headerindex"
+        "contactotitulo contactotitulo contactotitulo"
+        "contactopadreform contactopadreform contactopadreform"
+        "footerpadre footerpadre footerpadre";
+    }
+  
+    .indexPadre {
+      flex-wrap: wrap;
+    }
+  
+    .contactoPadreForm img {
+      display: none;
+    }
+  
+    .footerRedesContacto {
+      display: none;
+    }
+  
+    /*como-comprar*/
+  
+    .comprarPasosPadre {
+      flex-wrap: wrap;
+    }
+    /*consejos*/
+  
+    .consejosPadre {
+      flex-wrap: wrap;
+    }
+  
+    .consejosHijo {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .left h3 {
+      margin: 20px;
+      height: auto;
+    }
+  
+    .right h3 {
+      margin: 20px;
+      margin-bottom: 20px;
+      height: auto;
+    }
+  
+    .right p {
+      margin: 20px;
+      /*width: 700px ;*/
+      height: auto;
+    }
+  
+    .left p {
+      margin: 20px;
+      /*width: 700px ;*/
+      height: auto;
+    }
+  
+    /*contacto*/
+    .contactoPadreForm {
+      font-family: "Ibarra Real Nova", serif;
+      height: auto;
+  
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    /*recetario*/
+    .padreFlexRecetas {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 1245px) {
+    .gridPadreIndex {
+      display: grid;
+      grid-template-areas:
+        "headerindex headerindex headerindex"
+        "sectionindexa sectionindexa sectionindexa"
+        "sectionindexb sectionindexb sectionindexb"
+        "indexpadreboxes indexpadreboxes indexpadreboxes"
+        "footerpadre footerpadre footerpadre";
+    }
+  
+    .gridPadreContacto {
+      display: grid;
+      grid-template-areas:
+        "headerindex headerindex headerindex"
+        "contactotitulo contactotitulo contactotitulo"
+        "contactopadreform contactopadreform contactopadreform"
+        "footerpadre footerpadre footerpadre";
+    }
+    .indexPadre {
+      flex-wrap: wrap;
+    }
+  
+    .comprarPasosPadre {
+      flex-wrap: wrap;
+    }
+  
+    .consejosPadre {
+      flex-wrap: wrap;
+    }
+  
+    .padreFlexRecetas {
+      flex-wrap: wrap;
+    }
+  }
+  

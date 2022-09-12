@@ -1,0 +1,52 @@
+/*Pagina Contacto*/
+/*Aplicando grids*/
+
+.contactoTitulo {
+    grid-area: contactotitulo;
+  }
+  
+  .contactoPadreForm {
+    grid-area: contactopadreform;
+  }
+  
+  .contactoTitulo {
+    h2 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-family: "Ibarra Real Nova", serif;
+    }
+  
+    p {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-family: "Ibarra Real Nova", serif;
+    }
+  }
+  
+  .contactoPadreForm {
+    font-family: "Ibarra Real Nova", serif;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .contactoHijo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .left p {
+    margin: 20px;
+    height: auto;
+  }
+  
+  #text1 {
+    width: 250px;
+    height: 150px;
+  }
+  
+  

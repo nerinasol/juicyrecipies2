@@ -1,0 +1,52 @@
+/*Pagina Como comprar*/
+
+.comoComprar {
+    h2 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  
+    p {
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .comprarPasosPadre {
+    font-family: "Ibarra Real Nova", serif;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .comprarPasosHijo {
+    height: auto;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-width: 1px;
+    border-image: initial;
+    border-radius: 4px;
+    margin-left: 40px;
+    margin-right: 40px;
+  
+    p {
+      text-align: center;
+    }
+  }
+  
+  .padreFaqs {
+    font-family: "Ibarra Real Nova", serif;
+  
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      text-align: justify;
+    }
+  }

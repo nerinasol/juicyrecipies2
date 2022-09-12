@@ -1,0 +1,139 @@
+/*INDEX PAGE*/
+
+/*Aplicando Grids Area*/
+
+.headerPadre {
+    grid-area: headerindex;
+  }
+  
+  .sectionIndexA {
+    grid-area: sectionindexa;
+  }
+  
+  .sectionIndexB {
+    grid-area: sectionindexb;
+  }
+  
+  .indexPadre {
+    grid-area: indexpadreboxes;
+  }
+  
+  .footerGrid {
+    grid-area: footerpadre;
+  }
+  
+  .imageBanner {
+    width: 100%;
+  }
+  
+  .indexOne {
+    h2 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      text-align: justify;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  
+  .indexTopFiveTitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Ibarra Real Nova", serif;
+  }
+  
+  .indexPadre {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .indexHijo {
+    width: 400px;
+    min-height: 650px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 0px 30px;
+    border: 2px solid $color-secundario;
+    border-radius: 4px;
+  }
+  
+  p {
+    font-family: "Ibarra Real Nova", serif;
+  }
+  
+  /*FOOTER*/
+  
+  footer {
+    font-family: "Ibarra Real Nova", serif;
+  }
+  
+  .logoFooter {
+    width: 50px;
+  }
+  
+  .footerPadre {
+    height: auto;
+    background-color: $color-secundario;
+    border-width: 0px;
+    padding: 9px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-width: 3px;
+    margin: auto;
+  }
+  
+  .footerHijoCero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footerHijoOne {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footerHijoTwo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .footerHijoThree {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*No tocar con flex, es el whatsapp fixed*/
+  
+  .sectionContacto {
+    position: relative;
+    font-family: "Ibarra Real Nova", serif;
+  }
+  
+  .whatsappFixed {
+    position: fixed;
+    top: 0;
+    right: 25px;
+    top: 90%;
+  }

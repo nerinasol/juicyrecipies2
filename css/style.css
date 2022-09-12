@@ -39,6 +39,13 @@ main {
   .headerHijoTwo li {
     margin: 10px; }
 
+/*Pequeños componentes en común*/
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
 /*INDEX PAGE*/
 /*Aplicando Grids Area*/
 .headerPadre {
@@ -152,15 +159,7 @@ footer {
   right: 25px;
   top: 90%; }
 
-/*Pequeños componentes en común*/
-li {
-  list-style: none; }
-
-a {
-  text-decoration: none; }
-
 /* pagina RECETARIO*/
-/*RECETAS CON CARNE*/
 .recetarioHDos h2 {
   text-align: center; }
 
@@ -270,7 +269,8 @@ a {
   margin-bottom: 20px;
   height: auto; }
 
-.left p, .left a {
+.left p,
+.left a {
   margin-left: 40px;
   height: auto; }
 
