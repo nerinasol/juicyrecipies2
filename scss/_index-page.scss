@@ -104,12 +104,16 @@
     flex-direction: column;
     align-items: center;
   }
+
+  /*reemplazo con mixin
   
   .footerHijoOne {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
   }
-  
+  */
+
+
   .footerHijoTwo {
     display: flex;
     flex-direction: row;

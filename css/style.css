@@ -132,10 +132,13 @@ footer {
   flex-direction: column;
   align-items: center; }
 
-.footerHijoOne {
-  display: flex;
-  flex-direction: column; }
-
+/*reemplazo con mixin
+  
+  .footerHijoOne {
+    display: flex;
+    flex-direction: column; 
+  }
+  */
 .footerHijoTwo {
   display: flex;
   flex-direction: row;
@@ -274,20 +277,27 @@ footer {
   margin-left: 40px;
   height: auto; }
 
-.right h3 {
-  margin-right: 40px;
-  margin-bottom: 20px;
-  height: auto; }
+/* reemlazado por extend
+.right {
+  h3 {
+    margin-right: 40px;
+    margin-bottom: 20px;
+    height: auto;
+  }
 
-.right p {
-  margin-right: 40px;
-  height: auto; }
+  p {
+    margin-right: 40px;
+    height: auto;
+  }
 
-.right a {
-  margin-right: 40px;
-  margin-top: 20px;
-  height: auto; }
+  a {
+    margin-right: 40px;
+    margin-top: 20px;
+    height: auto;
+  }
+}
 
+*/
 /*Pagina Contacto*/
 /*Aplicando grids*/
 .contactoTitulo {
@@ -296,16 +306,21 @@ footer {
 .contactoPadreForm {
   grid-area: contactopadreform; }
 
-.contactoTitulo h2 {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-family: "Ibarra Real Nova", serif; }
-
-.contactoTitulo p {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-family: "Ibarra Real Nova", serif; }
-
+/*
+  
+  .contactoTitulo {
+    h2 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-family: "Ibarra Real Nova", serif;
+    }
+  
+    p {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-family: "Ibarra Real Nova", serif;
+    }
+  }*/
 .contactoPadreForm {
   font-family: "Ibarra Real Nova", serif;
   height: auto;
@@ -399,3 +414,28 @@ footer {
     flex-wrap: wrap; }
   .padreFlexRecetas {
     flex-wrap: wrap; } }
+
+/*map get*/
+.contactoTitulo h2 {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.contactoTitulo p {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+/*aplicando extend en la pagina de consejos*/
+.estiloConsejosRight, .right h3, .right p, .right a {
+  margin-right: 40px;
+  height: auto; }
+
+.right h3 {
+  margin-bottom: 20px; }
+
+.right a {
+  margin-top: 20px; }
+
+/*agregando mixin a pagina index*/
+.footerHijoOne {
+  display: flex;
+  flex-direction: column; }

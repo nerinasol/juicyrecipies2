@@ -1,0 +1,17 @@
+/*map get*/
+
+$estiloContactoTitulo: (marginTop:5px, marginBottom: 5px );
+
+.contactoTitulo {
+    h2 {
+      margin-top: map-get($estiloContactoTitulo, marginTop);
+      margin-bottom: map-get($estiloContactoTitulo, marginBottom);
+      
+    }
+  
+    p {
+        margin-top: map-get($estiloContactoTitulo, marginTop);
+        margin-bottom: map-get($estiloContactoTitulo, marginBottom);
+    }
+  }
+  

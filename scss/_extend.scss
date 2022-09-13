@@ -1,0 +1,25 @@
+/*aplicando extend en la pagina de consejos*/
+
+
+.estiloConsejosRight {
+    margin-right: 40px;
+    height: auto;
+}
+
+.right {
+    h3 {
+        margin-bottom: 20px;
+        @extend .estiloConsejosRight;
+    }
+
+    p {
+        @extend .estiloConsejosRight;
+    }
+
+    a {
+        margin-top: 20px;
+        @extend .estiloConsejosRight;
+    }
+}
+
+

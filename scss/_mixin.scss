@@ -1,0 +1,10 @@
+/*agregando mixin a pagina index*/
+
+@mixin footerHijoOneMixin {
+    display: flex;
+    flex-direction: column;    
+}
+
+.footerHijoOne {
+    @include footerHijoOneMixin;
+}
