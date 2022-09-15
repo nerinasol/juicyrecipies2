@@ -70,44 +70,88 @@
     <form >
       <div class="contactoPadreForm">
         <section>
-          <div class="contactoHijo">
-            <label for="nombre">Nombre</label>
-            <input type="text" placeholder="ejemplo: María" />
-            <label for="apellido">Apellido</label>
-            <input type="text" placeholder="ejemplo: Alonso" />
+          <div class="contactoHijo">   
+
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="nombre" class="col-form-label">Nombre</label>
+              </div>
+              <div class="col-auto">
+                <input type="text"  class="form-control" placeholder="ejemplo: María">
+              </div>              
+            </div>
+
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="apellido" class="col-form-label">Apellido</label>
+              </div>
+              <div class="col-auto">
+                <input type="text"  class="form-control" placeholder="ejemplo: Alonso">
+              </div>              
+            </div>
+                        
           </div>
 
           <div class="contactoHijo">
-            <label for="email">Ingrese su email</label>
-            <input type="email" placeholder="maria123@ejemplo.com" />        
-            <label for="numbero-celular">Celular (opcional)</label>
-            <input type="number" placeholder="+54 11-5555-6666" />  
+
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="nombre" class="col-form-label">Ingrese su email</label>
+              </div>
+              <div class="col-auto">
+                <input type="text"  class="form-control" placeholder="ejemplo: maria123@ejemplo.com">
+              </div>              
+            </div>
+
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="nombre" class="col-form-label">Celular(opcional)</label>
+              </div>
+              <div class="col-auto">
+                <input type="text"  class="form-control" placeholder="ejemplo: +54 11-5555-6666">
+              </div>              
+            </div>
+    
           </div>
 
           <div class="contactoHijo">   
             <p>Selecciona una opcion de contacto principal.</p>
-            <input type="radio" name="pregunta1" value="whatsapp" />
-            <label for="whatsapp-optin">Whatsapp</label>       
-            <input type="radio" name="pregunta1" value="email" />
-            <label for="email-optin">email</label>
-          </div> 
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Email
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Whatsapp
+              </label>
+            </div>
+            
+          </div>           
             
           <div class="contactoHijo">
-            <p>Selecciona una opcion de consulta.</p>
-            <select name="opcion-consulta">
-            <option value="sugerencias">Sugerencias</option>
-            <option value="compra">Disponibilidad</option>          
-            <option value="envios">Envios</option>
-            <option value="otros">Otros</option>          
-            </select>     
+            
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Selecciona una opcion de consulta.</option>
+              <option value="1">Sugerencias</option>
+              <option value="2">Disponibilidad</option>
+              <option value="3">Envíos</option>
+              <option value="3">Otros</option>
+            </select>
+
           </div> 
           
-          <div class="contactoHijo">    
-              <p>Detalle su Consulta</p>
-              <input id="text1" name="text1" />  
-            <div>        
-              <input type="submit" />
-            </div>  
+          <div class="contactoHijo">
+            <p>Detalle su Consulta</p>
+            <div class="form-floating">
+              <textarea id="text1" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2"></label>
+              <input type="submit" class="button-54">
+            </div>                      
+               
+             
           </div>
         </section>
 
