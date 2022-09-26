@@ -40,7 +40,8 @@
     /*consejos*/
   
     .consejosPadre {
-      flex-wrap: wrap;
+      margin-right: 0px;
+      margin-left: 0px;
     }
   
     .consejosHijo {
@@ -54,37 +55,51 @@
     }
   
     .left h3 {
-      margin: 20px;
+      margin: 0px;
       height: auto;
     }
   
     .right h3 {
-      margin: 20px;
-      margin-bottom: 20px;
+      margin: 0px;
+      margin-bottom: 0px;
       height: auto;
     }
   
     .right p {
-      margin: 20px;
-      /*width: 700px ;*/
+      margin: 0px;
       height: auto;
     }
   
-    .left p {
-      margin: 20px;
-      /*width: 700px ;*/
+    .left p,a {
+      margin: 0px;      
       height: auto;
+    } 
+
+    .consejosImages {
+      text-align: center;
+      margin-top: 20px;
     }
+
+    .alternar {
+      display: flex;
+      flex-direction: column;
+      order: -1;
+    }
+
   
     /*contacto*/
     .contactoPadreForm {
       font-family: "Ibarra Real Nova", serif;
-      height: auto;
-  
+      height: auto;  
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
+    }
+
+    .flexFormRow {
+      display: flex;
+      flex-direction: column;
     }
   
     /*recetario*/
@@ -108,8 +123,8 @@
       display: grid;
       grid-template-areas:
         "headerindex headerindex headerindex"
-        "contactotitulo contactotitulo contactotitulo"
-        "contactopadreform contactopadreform contactopadreform"
+        "contactotitulo contactotitulo contactotitulo contactotitulo"
+        "contactopadreform contactopadreform contactopadreform contactopadreform"
         "footerpadre footerpadre footerpadre";
     }
     .indexPadre {

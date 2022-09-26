@@ -105,13 +105,21 @@
     align-items: center;
   }
 
-  /*reemplazo con mixin
+  
   
   .footerHijoOne {
     display: flex;
     flex-direction: column; 
-  }
-  */
+    
+    h4 {
+      text-align: center;
+    }
+    ul {
+      padding-left: 0%;
+      text-align: center;
+    
+    }
+  } 
 
 
   .footerHijoTwo {

@@ -15,6 +15,8 @@
   .comprarPasosPadre {
     font-family: "Ibarra Real Nova", serif;
     height: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +36,10 @@
     margin-right: 40px;
   
     p {
+      text-align: center;
+    }
+
+    h4 {
       text-align: center;
     }
   }

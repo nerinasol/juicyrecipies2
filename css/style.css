@@ -46,6 +46,9 @@ li {
 a {
   text-decoration: none; }
 
+h2 {
+  font-weight: bold; }
+
 /*INDEX PAGE*/
 /*Aplicando Grids Area*/
 .headerPadre {
@@ -132,13 +135,15 @@ footer {
   flex-direction: column;
   align-items: center; }
 
-/*reemplazo con mixin
-  
-  .footerHijoOne {
-    display: flex;
-    flex-direction: column; 
-  }
-  */
+.footerHijoOne {
+  display: flex;
+  flex-direction: column; }
+  .footerHijoOne h4 {
+    text-align: center; }
+  .footerHijoOne ul {
+    padding-left: 0%;
+    text-align: center; }
+
 .footerHijoTwo {
   display: flex;
   flex-direction: row;
@@ -238,6 +243,8 @@ footer {
 .comprarPasosPadre {
   font-family: "Ibarra Real Nova", serif;
   height: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -255,6 +262,8 @@ footer {
   margin-left: 40px;
   margin-right: 40px; }
   .comprarPasosHijo p {
+    text-align: center; }
+  .comprarPasosHijo h4 {
     text-align: center; }
 
 .padreFaqs {
@@ -292,6 +301,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+  .consejosHijo a {
+    text-align: right; }
 
 .left h3 {
   margin-left: 40px;
@@ -355,19 +366,17 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-around; }
 
 .contactoHijo {
   margin-top: 10px;
   margin-bottom: 10px; }
 
-.left p {
-  margin: 20px;
-  height: auto; }
-
-#text1 {
-  width: 250px;
-  height: 150px; }
+.flexFormRow {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
 /*APLICANDO @MEDIA*/
 @media (max-width: 900px) {
@@ -389,7 +398,8 @@ footer {
     flex-wrap: wrap; }
   /*consejos*/
   .consejosPadre {
-    flex-wrap: wrap; }
+    margin-right: 0px;
+    margin-left: 0px; }
   .consejosHijo {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -399,20 +409,25 @@ footer {
     flex-direction: column;
     justify-content: space-between; }
   .left h3 {
-    margin: 20px;
+    margin: 0px;
     height: auto; }
   .right h3 {
-    margin: 20px;
-    margin-bottom: 20px;
+    margin: 0px;
+    margin-bottom: 0px;
     height: auto; }
   .right p {
-    margin: 20px;
-    /*width: 700px ;*/
+    margin: 0px;
     height: auto; }
-  .left p {
-    margin: 20px;
-    /*width: 700px ;*/
+  .left p, a {
+    margin: 0px;
     height: auto; }
+  .consejosImages {
+    text-align: center;
+    margin-top: 20px; }
+  .alternar {
+    display: flex;
+    flex-direction: column;
+    order: -1; }
   /*contacto*/
   .contactoPadreForm {
     font-family: "Ibarra Real Nova", serif;
@@ -421,6 +436,9 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center; }
+  .flexFormRow {
+    display: flex;
+    flex-direction: column; }
   /*recetario*/
   .padreFlexRecetas {
     flex-wrap: wrap; } }
@@ -431,7 +449,7 @@ footer {
     grid-template-areas: "headerindex headerindex headerindex" "sectionindexa sectionindexa sectionindexa" "sectionindexb sectionindexb sectionindexb" "indexpadreboxes indexpadreboxes indexpadreboxes" "footerpadre footerpadre footerpadre"; }
   .gridPadreContacto {
     display: grid;
-    grid-template-areas: "headerindex headerindex headerindex" "contactotitulo contactotitulo contactotitulo" "contactopadreform contactopadreform contactopadreform" "footerpadre footerpadre footerpadre"; }
+    grid-template-areas: "headerindex headerindex headerindex" "contactotitulo contactotitulo contactotitulo contactotitulo" "contactopadreform contactopadreform contactopadreform contactopadreform" "footerpadre footerpadre footerpadre"; }
   .indexPadre {
     flex-wrap: wrap; }
   .comprarPasosPadre {

@@ -31,6 +31,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  a {
+    text-align: right;
+  }
 }
 
 .left {
