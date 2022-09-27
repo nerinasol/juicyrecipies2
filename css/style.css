@@ -95,16 +95,16 @@ h2 {
 
 .indexHijo {
   width: 400px;
-  min-height: 650px;
+  min-height: 550px;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   box-shadow: 5px 0px 30px;
   border: 2px solid #ffbd9b;
   border-radius: 4px; }
